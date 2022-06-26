@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap.css">
+	<style type="text/css">
+		.order {
+			color: grey;
+		}
+		.timer {
+			color: red;
+		}		
+	</style>
+	<!--<script src="bootstrap.bundle.js"></script>-->
+	<script>
+		function getRndInteger(min, max) {
+  			return Math.floor(Math.random() * (max - min)) + min;
+  		};
+  		window.showFunction = ()=> {
+    		var elements = document.getElementsByClassName('td1');
+    		for (var element of elements) {
+  				element.style.color = 'green';
+			}
+		};
+		window.hideFunction = ()=> {
+    		var elements = document.getElementsByClassName('td1');
+    		for (var element of elements) {
+  				element.style.color = 'white';
+			}
+		};
+		//Timer START
+		var minutesLabel = document.getElementById("minutes");
+		var secondsLabel = document.getElementById("seconds");
+		var totalSeconds = 0;
+		var sec = 0;
+
+		function setTime(cancel) {
+			if (cancel == 1) {
+				clearTimeout(temp1);
+			}
+			if (cancel == 0) {
+				++totalSeconds;
+			}
+		};
+    	function pad (val) {return val > 9 ? val : "0" + val;}
+    	var temp1 = setInterval(function(){
+        				document.getElementById("seconds").innerHTML=pad(++sec%60);
+        				document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+  	  				}, 1000);
+		//Timer END
+  	</script>
+	<title>Maths Practice Sheet #1</title>
+</head>
+<body>
+	<h1 style="text-align: center;">2 digit Multiplication</h1>
+	<h2 style="text-align: center;">
+		<span class="timer" id="minutes"></span>:<span id="seconds" class="timer"></span>
+	</h2>
+	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
+	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
+	<h3>
+		<table class="table" style="text-align: right">
+			<tr>
+				<td class="order">1.</td>
+		    	<td id="one" class="num1"></td>
+		    	<td>x</td>
+		    	<td id="two" class="num1"></td>
+		    	<td>=</td>
+		    	<td id="m1" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('one').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('two').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num1");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+					document.getElementById("m1").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">2.</td>
+		    	<td id="three" class="num2"></td>
+		    	<td>x</td>
+		    	<td id="four" class="num2"></td>
+		    	<td>=</td>
+		    	<td id="m2" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('three').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('four').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num2");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m2").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">3.</td>
+		    	<td id="five" class="num3"></td>
+		    	<td>x</td>
+		    	<td id="six" class="num3"></td>
+		    	<td>=</td>
+		    	<td id="m3" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('five').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('six').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num3");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m3").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">4.</td>
+		    	<td id="seven" class="num4"></td>
+		    	<td>x</td>
+		    	<td id="eight" class="num4"></td>
+		    	<td>=</td>
+		    	<td id="m4" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById("seven").innerHTML = getRndInteger(11,99);
+		    		document.getElementById('eight').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num4");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					var d = document.getElementById("m4").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">5.</td>
+		    	<td id="nine" class="num5"></td>
+		    	<td>x</td>
+		    	<td id="ten" class="num5"></td>
+		    	<td>=</td>
+		    	<td id="m5" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('nine').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('ten').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num5");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m5").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">6.</td>
+		    	<td id="eleven" class="num6"></td>
+		    	<td>x</td>
+		    	<td id="twelve" class="num6"></td>
+		    	<td>=</td>
+		    	<td id="m6" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('eleven').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('twelve').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num6");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m6").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">7.</td>
+		    	<td id="thirteen" class="num7"></td>
+		    	<td>x</td>
+		    	<td id="fourteen" class="num7"></td>
+		    	<td>=</td>
+		    	<td id="m7" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('thirteen').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('fourteen').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num7");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m7").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">8.</td>
+		    	<td id="fifteen" class="num8"></td>
+		    	<td>x</td>
+		    	<td id="sixteen" class="num8"></td>
+		    	<td>=</td>
+		    	<td id="m8" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('fifteen').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('sixteen').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num8");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m8").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">9.</td>
+		    	<td id="seventeen" class="num9"></td>
+		    	<td>x</td>
+		    	<td id="eighteen" class="num9"></td>
+		    	<td>=</td>
+		    	<td id="m9" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('seventeen').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('eighteen').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num9");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m9").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">10.</td>
+		    	<td id="nineteen" class="num10"></td>
+		    	<td>x</td>
+		    	<td id="twenty" class="num10"></td>
+		    	<td>=</td>
+		    	<td id="m10" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('nineteen').innerHTML = getRndInteger(11,99);
+		    		document.getElementById('twenty').innerHTML = getRndInteger(11,99);
+		    		var numbers = document.querySelectorAll(".num10");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Number(numbers[i].innerText);
+					}
+
+					document.getElementById("m10").innerText = total;
+		    	</script>
+			</tr>
+		</table>
+	</h3>
+	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
+	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
+	
+</body>
+</html>

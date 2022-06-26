@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap.css">
+	<style type="text/css">
+		.order {
+			color: grey;
+		}
+		.timer {
+			color: red;
+		}
+	</style>
+	<!--<script src="bootstrap.bundle.js"></script>-->
+	<script>
+		var numbers = [2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+		var randomg = shuffle(numbers);
+		function shuffle(o) {
+		    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		    return o;
+		};
+
+		// function getRndInteger(min, max) {
+  // 			return Math.floor(Math.random() * (max - min)) + min;
+  // 		};
+  //^^ Replaced by the shuffle since this one repeats elements
+  		showFunction = ()=> {
+    		var elements = document.getElementsByClassName('td1');
+    		for (var element of elements) {
+  				element.style.color = 'green';
+			}
+		};
+		hideFunction = ()=> {
+    		var elements = document.getElementsByClassName('td1');
+    		for (var element of elements) {
+  				element.style.color = 'white';
+			}
+		};
+		//Timer START
+		var minutesLabel = document.getElementById("minutes");
+		var secondsLabel = document.getElementById("seconds");
+		var totalSeconds = 0;
+		var sec = 0;
+
+		function setTime(cancel) {
+			if (cancel == 1) {
+				clearTimeout(temp1);
+			}
+			if (cancel == 0) {
+				++totalSeconds;
+			}
+		};
+    	function pad (val) {return val > 9 ? val : "0" + val;}
+    	var temp1 = setInterval(function(){
+        				document.getElementById("seconds").innerHTML=pad(++sec%60);
+        				document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+  	  				}, 1000);
+		//Timer END
+
+  	</script>
+	<title>Maths Practice Sheet #5</title>
+</head>
+<body>
+	<h1 style="text-align: center;">Cubes Practice (1-25)</h1>
+	<h2 style="text-align: center;">
+		<span class="timer" id="minutes"></span>:<span id="seconds" class="timer"></span>
+	</h2>
+	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
+	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
+	<h3>
+		<table class="table" style="text-align: right">
+			<tr>
+				<td class="order">1.</td>
+		    	<td id="one" class="num1"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m1" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('one').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num1");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+					document.getElementById("m1").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">2.</td>
+		    	<td id="two" class="num2"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m2" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('two').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num2");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m2").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">3.</td>
+		    	<td id="three" class="num3"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m3" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('three').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num3");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m3").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">4.</td>
+		    	<td id="four" class="num4"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m4" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById("four").innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num4");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					var d = document.getElementById("m4").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">5.</td>
+		    	<td id="five" class="num5"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m5" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('five').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num5");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m5").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">6.</td>
+		    	<td id="six" class="num6"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m6" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('six').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num6");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m6").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">7.</td>
+		    	<td id="seven" class="num7"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m7" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('seven').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num7");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m7").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">8.</td>
+		    	<td id="eight" class="num8"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m8" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('eight').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num8");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m8").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">9.</td>
+		    	<td id="nine" class="num9"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m9" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('nine').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num9");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m9").innerText = total;
+		    	</script>
+			</tr>
+			<tr>
+				<td class="order">10.</td>
+		    	<td id="ten" class="num10"></td>
+		    	<td><sup>3</sup></td>
+		    	<td>=</td>
+		    	<td id="m10" class="td1" style="color: white;"></td>
+		    	<script>
+		    		document.getElementById('ten').innerHTML = randomg.pop();
+		    		var numbers = document.querySelectorAll(".num10");
+					var total = 1;
+					for (var i = 0; i < numbers.length; i++)
+					{
+					    total*= Math.pow((numbers[i].innerText),3);
+					}
+
+					document.getElementById("m10").innerText = total;
+		    	</script>
+			</tr>
+		</table>
+	</h3>
+	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
+	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
+	
+</body>
+</html>
