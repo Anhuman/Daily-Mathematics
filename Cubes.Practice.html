@@ -25,6 +25,7 @@
   // 			return Math.floor(Math.random() * (max - min)) + min;
   // 		};
   //^^ Replaced by the shuffle since this one repeats elements
+  
   		showFunction = ()=> {
     		var elements = document.getElementsByClassName('td1');
     		for (var element of elements) {
@@ -66,14 +67,14 @@
 	<h2 style="text-align: center;">
 		<span class="timer" id="minutes"></span>:<span id="seconds" class="timer"></span>
 	</h2>
-	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
+	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)" onhover="">
 	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
 	<h3>
 		<table class="table" style="text-align: right">
 			<tr>
 				<td class="order">1.</td>
 		    	<td id="one" class="num1"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m1" class="td1" style="color: white;"></td>
 		    	<script>
@@ -90,7 +91,7 @@
 			<tr>
 				<td class="order">2.</td>
 		    	<td id="two" class="num2"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m2" class="td1" style="color: white;"></td>
 		    	<script>
@@ -108,7 +109,7 @@
 			<tr>
 				<td class="order">3.</td>
 		    	<td id="three" class="num3"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m3" class="td1" style="color: white;"></td>
 		    	<script>
@@ -126,7 +127,7 @@
 			<tr>
 				<td class="order">4.</td>
 		    	<td id="four" class="num4"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m4" class="td1" style="color: white;"></td>
 		    	<script>
@@ -144,7 +145,7 @@
 			<tr>
 				<td class="order">5.</td>
 		    	<td id="five" class="num5"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m5" class="td1" style="color: white;"></td>
 		    	<script>
@@ -162,7 +163,7 @@
 			<tr>
 				<td class="order">6.</td>
 		    	<td id="six" class="num6"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m6" class="td1" style="color: white;"></td>
 		    	<script>
@@ -180,7 +181,7 @@
 			<tr>
 				<td class="order">7.</td>
 		    	<td id="seven" class="num7"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m7" class="td1" style="color: white;"></td>
 		    	<script>
@@ -198,7 +199,7 @@
 			<tr>
 				<td class="order">8.</td>
 		    	<td id="eight" class="num8"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m8" class="td1" style="color: white;"></td>
 		    	<script>
@@ -216,7 +217,7 @@
 			<tr>
 				<td class="order">9.</td>
 		    	<td id="nine" class="num9"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m9" class="td1" style="color: white;"></td>
 		    	<script>
@@ -234,7 +235,7 @@
 			<tr>
 				<td class="order">10.</td>
 		    	<td id="ten" class="num10"></td>
-		    	<td><sup>3</sup></td>
+		    	<td style="text-align: left;"><sup>3</sup></td>
 		    	<td>=</td>
 		    	<td id="m10" class="td1" style="color: white;"></td>
 		    	<script>
@@ -254,9 +255,9 @@
 	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
 	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
 	<footer class="text-dark"; style="position: fixed; bottom: 0; width: 100%;">
-	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-		Version 1.0 | &#169 2022 Daily Practice Designs, <br> All rights reserved.
-	</div>
+		<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+		<i class="link-secondary">Version 1.0 </i> &#169 2022 Daily Practice Designs
+		</div>
 	</footer>
 </body>
 </html>

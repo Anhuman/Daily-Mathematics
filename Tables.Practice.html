@@ -14,6 +14,12 @@
 	</style>
 	<!--<script src="bootstrap.bundle.js"></script>-->
 	<script>
+		var numbers = [11,12,13,14,15,16,17,18,19,20];
+		var randomg = shuffle(numbers);
+		function shuffle(o) {
+		    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		    return o;
+		};			
 		function getRndInteger(min, max) {
   			return Math.floor(Math.random() * (max - min)) + min;
   		};
@@ -70,7 +76,7 @@
 		    	<td>=</td>
 		    	<td id="m1" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('one').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('one').innerHTML = randomg.pop();
 		    		document.getElementById('two').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num1");
 					var total = 1;
@@ -89,7 +95,7 @@
 		    	<td>=</td>
 		    	<td id="m2" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('three').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('three').innerHTML = randomg.pop();
 		    		document.getElementById('four').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num2");
 					var total = 1;
@@ -109,7 +115,7 @@
 		    	<td>=</td>
 		    	<td id="m3" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('five').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('five').innerHTML = randomg.pop();
 		    		document.getElementById('six').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num3");
 					var total = 1;
@@ -129,7 +135,7 @@
 		    	<td>=</td>
 		    	<td id="m4" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById("seven").innerHTML = getRndInteger(11,20);
+		    		document.getElementById('seven').innerHTML = randomg.pop();
 		    		document.getElementById('eight').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num4");
 					var total = 1;
@@ -149,7 +155,7 @@
 		    	<td>=</td>
 		    	<td id="m5" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('nine').innerHTML = getRndInteger(11,20);
+			    	document.getElementById('nine').innerHTML = randomg.pop();
 		    		document.getElementById('ten').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num5");
 					var total = 1;
@@ -169,7 +175,7 @@
 		    	<td>=</td>
 		    	<td id="m6" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('eleven').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('eleven').innerHTML = randomg.pop();
 		    		document.getElementById('twelve').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num6");
 					var total = 1;
@@ -189,7 +195,7 @@
 		    	<td>=</td>
 		    	<td id="m7" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('thirteen').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('thirteen').innerHTML = randomg.pop();
 		    		document.getElementById('fourteen').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num7");
 					var total = 1;
@@ -209,7 +215,7 @@
 		    	<td>=</td>
 		    	<td id="m8" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('fifteen').innerHTML = getRndInteger(11,20);
+		    		document.getElementById('fifteen').innerHTML = randomg.pop();
 		    		document.getElementById('sixteen').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num8");
 					var total = 1;
@@ -229,7 +235,7 @@
 		    	<td>=</td>
 		    	<td id="m9" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('seventeen').innerHTML = getRndInteger(2,20);
+		    		document.getElementById('seventeen').innerHTML = randomg.pop();
 		    		document.getElementById('eighteen').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num9");
 					var total = 1;
@@ -249,7 +255,7 @@
 		    	<td>=</td>
 		    	<td id="m10" class="td1" style="color: white;"></td>
 		    	<script>
-		    		document.getElementById('nineteen').innerHTML = getRndInteger(2,20);
+		    		document.getElementById('nineteen').innerHTML = randomg.pop();
 		    		document.getElementById('twenty').innerHTML = getRndInteger(2,9);
 		    		var numbers = document.querySelectorAll(".num10");
 					var total = 1;
@@ -266,9 +272,9 @@
 	<input type="button" value="SHOW ALL" style="width:49.9%; float: left;" class="btn btn-primary" onclick="showFunction(),setTime(1)">
 	<input type="button" value="HIDE ALL" style="width:49.9%; float: right;" class="btn btn-secondary" onclick="hideFunction(),setTime(0)">
 	<footer class="text-dark"; style="position: fixed; bottom: 0; width: 100%;">
-	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-		Version 1.0 | &#169 2022 Daily Practice Designs, <br> All rights reserved.
-	</div>
+		<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+		<i class="link-secondary">Version 1.0 </i> &#169 2022 Daily Practice Designs
+		</div>
 	</footer>
 </body>
 </html>

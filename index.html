@@ -6,37 +6,72 @@
 	<link rel="manifest" href="manifest.json">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<link rel="stylesheet" href="bootstrap.min.css">
+	<style type="text/css">
+		.btn {
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 5px;
+		    background-color: coral;
+  			border: none;
+  			color: #FFFFFF;
+		}
+
+		.btn span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+
+		.btn span:after {
+		  content: '\0000bb';
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.5s;
+		}
+
+		.btn:hover span {
+		  padding-right: 25px;
+		}
+
+		.btn:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		}
+	</style>
 	<title>Daily Mathematics (D.M.)</title>
 </head>
 <body>
-	<h1 style="text-align: center; padding: 17px;">Daily Mathematics</h1>
-	<br>
+	<h1 style="text-align: center; padding: 17px;">Daily Mathematics
+	</h1><br>
 	<p style="text-align: center;">
-	<a href="2.digit.Multiplication.html">
-	<button style="width:80%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg">2-Digit Multiplication</button>
-	</a>
-	</p>
-	<p style="text-align: center;">
-	<a href="3.digit.Multiplication.html">
-	<button style="width:80%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg">3-Digit Multiplication</button>
-	</a>
+		<a href="2.digit.Multiplication.html">
+		<button style="width:77%; font-size: 17px; font-style: oblique; vertical-align: middle;" class="btn btn-dark btn-lg, shadow-sm"><span>2-Digit Multiplication</span></button>
+		</a>
 	</p>
 	<p style="text-align: center;">
-	<a href="Tables.Practice.html">
-	<button style="width:80%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg">Multiplication Tables (11-20)</button>
-	</a>
+		<a href="3.digit.Multiplication.html">
+		<button style="width:77%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg, shadow-sm"><span>3-Digit Multiplication</span></button>
+		</a>
 	</p>
 	<p style="text-align: center;">
-	<a href="Squares.Practice.html">
-	<button style="width:80%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg">Squares Practice (1-50)</button>
-	</a>
+		<a href="Tables.Practice.html">
+		<button style="width:77%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg, shadow-sm"><span>Multiplication Tables (11-20)</span></button>
+		</a>
 	</p>
-		<p style="text-align: center;">
-	<a href="Cubes.Practice.html">
-	<button style="width:80%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg">Cubes Practice (1-25)</button>
-	</a>
+	<p style="text-align: center;">
+		<a href="Squares.Practice.html">
+		<button style="width:77%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg, shadow-sm"><span>Squares Practice (1-50)</span></button>
+		</a>
 	</p>
-	<div style="position: relative; bottom: -100px">
+	<p style="text-align: center;">
+		<a href="Cubes.Practice.html">
+		<button style="width:77%; font-size: 17px; font-style: oblique;" class="btn btn-dark btn-lg, shadow-sm"><span>Cubes Practice (1-25)</span></button>
+		</a>
+	</p>
+	<div style="position: relative; bottom: -70px">
 		<h5 style="text-align: center; font-style: italic;">
 			Created by <i style="color: darkgrey;"> Anshuman </i>
 		</h5>
@@ -57,7 +92,7 @@
 	</div>
 	<footer class="text-dark"; style="position: fixed; bottom: 0; width: 100%;">
 	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-		Version 1.0 | &#169 2022 Daily Practice Designs, <br> All rights reserved.
+		<i class="link-secondary">Version 1.0 </i> &#169 2022 Daily Practice Designs <br> All rights reserved.
 	</div>
 	</footer>
 </body>
