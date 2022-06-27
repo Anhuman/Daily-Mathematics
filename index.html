@@ -4,9 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="manifest" href="manifest.json">
+	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js">
+	</script>
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<style type="text/css">
+		.transition-fade {
+		  transition: 0.4s;
+		  opacity: 1;
+		}
+
+		html.is-animating .transition-fade {
+		  opacity: 0;
+		}
 		.btn {
 			transition: all 0.5s;
 			cursor: pointer;
@@ -20,7 +32,7 @@
 		  cursor: pointer;
 		  display: inline-block;
 		  position: relative;
-		  transition: 1.2s;
+		  transition: 1.05s;
 		}
 
 		.btn span:after {
@@ -44,8 +56,10 @@
 	<title>Daily Mathematics (D.M.)</title>
 </head>
 <body>
+<main id="swup" class="transition-fade">
 	<h1 style="text-align: center; padding: 17px;">Daily Mathematics
-	</h1><br>
+	</h1>	
+	<br>
 	<p style="text-align: center;">
 		<a href="2.digit.Multiplication.html">
 		<button style="width:77%; font-size: 17px; font-style: oblique; vertical-align: middle;" class="btn btn-dark btn-lg, shadow-sm"><span>2-Digit Multiplication</span></button>
@@ -95,5 +109,6 @@
 		<i class="link-secondary">Version 1.0 </i> &#169 2022 Daily Practice Designs <br> All rights reserved.
 	</div>
 	</footer>
+</main>
 </body>
 </html>
