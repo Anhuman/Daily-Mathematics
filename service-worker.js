@@ -37,10 +37,10 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["2.digit.Multiplication.html","79cbf8ca30df8c382d0ec92ca35b777a"],["3.digit.Multiplication.html","133e92b8c5a5ecea664026fdc7bfb23a"],["Cubes.Practice.html","aee5a6d03d678bd5460da929dd8efbac"],["Squares.Practice.html","df1cc943ba4b82b5791174773d01fd00"],["Tables.Practice.html","2cb01c0090ff66c12b2e7eb5e8735152"],["bootstrap.bundle.js","2ed404bac75a500b6e75cf28c50e9bd4"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","27bc47c18deb28dfa4165d63bb132af1"],["manifest.json","ae19fabe01d851658f72fee607768bb4"]];
+var precacheConfig = [["#Simplification.Practice.html","6873b22d77ecc5c7c5eadcff9215ea68"],["2.digit.Multiplication.html","33491f172f9d17bd4dbee4c1bf891e21"],["3.digit.Multiplication.html","bd26785f6b2d4213ae27081d6106bb46"],["Cubes.Practice.html","7dc2c5985ac933cd56e1c14e783f1314"],["Squares.Practice.html","e913203d068b6c63c7658018e305834d"],["Tables.Practice.html","5b7a864aebc8bd801bfbbac2c3e13269"],["app.js","fff1cdfe057a19d7472a28e855869fc8"],["bootstrap.bundle.js","2ed404bac75a500b6e75cf28c50e9bd4"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["bootstrap.min.css","94994c66fec8c3468b269dc0cc242151"],["bootstrap.min.css.map","95fca4cc7b7d54a6bb0a6a1a11c904fa"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","4dcbb55f470c729328d0464ac8377bda"],["manifest.json","ae19fabe01d851658f72fee607768bb4"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
-self.addEventListener('fetch', function(event) {});
+
 var ignoreUrlParametersMatching = [/^utm_/];
 
 
