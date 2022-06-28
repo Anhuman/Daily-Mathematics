@@ -1,3 +1,5 @@
+const pwa_cache = "1.1";
+
 /**
  * Copyright 2016 Google Inc. All rights reserved.
  *
