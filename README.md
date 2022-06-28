@@ -1,6 +1,6 @@
 # Daily-Mathematics PWA
 IMPORTANT!!\
-Instructions for Updating (for Android 11 onwards):
+Instructions for Updating (for Android 10+):
 1. Press Hold the App for a few seconds (in the app drawer).
 2. Click 'Site Settings'.
 3. Click 'Clear & Reset'.
