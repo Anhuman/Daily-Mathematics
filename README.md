@@ -6,12 +6,10 @@ Instructions for Updating (for Android 11 onwards):
 3. Click 'Clear & Reset'.
 4. Exit and Open the App again. [Check the version number on the bottom to confirm]
 
-Version Changelog:
-28/06/2022 -> Version 1.1-
- Features-
- >Fully Offline Capability
- Known Bugs-
- >Issue regarding Updating the app due to exisiting cache.
-25/06/2022 -> Version 1
- Features-
- >Online functions 
+Latest Version:
+v1.1
+Features-
+>Fully Offline and decreased loading time via use of cache.
+
+Known Bugs-
+ >Issue regarding Updating the app due to use of cache.
