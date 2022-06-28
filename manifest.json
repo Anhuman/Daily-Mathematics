@@ -1,6 +1,10 @@
 {
+  "theme_color": "#FFA500",
+  "background_color": "##FFFFFF",
+  "display": "standalone",
   "name": "Daily Mathematics by Anshuman",
   "short_name": "Daily Mathematics",
+  "description": "A Web PWA for Mathematics Practice",
   "start_url": "index.html",
   "scope": "./",
   "icons": [
@@ -15,7 +19,5 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
-  "background_color": "##FFFFFF",
-  "display": "standalone"
+
 }
