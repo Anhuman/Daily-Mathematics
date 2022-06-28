@@ -994,10 +994,6 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
 
   const NODE_TEXT = 3;
   const SelectorEngine = {

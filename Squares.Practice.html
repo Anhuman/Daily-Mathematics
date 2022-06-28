@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="myscript.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<style type="text/css">
 		.order {
@@ -20,11 +21,6 @@
 		    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 		    return o;
 		};
-
-		// function getRndInteger(min, max) {
-  // 			return Math.floor(Math.random() * (max - min)) + min;
-  // 		};
-  //^^ Replaced by the shuffle since this one repeats elements
   		showFunction = ()=> {
     		var elements = document.getElementsByClassName('td1');
     		for (var element of elements) {
