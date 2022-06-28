@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["#Simplification.Practice.html","6873b22d77ecc5c7c5eadcff9215ea68"],["2.digit.Multiplication.html","0be36c347962042e8bed241b28ee6734"],["3.digit.Multiplication.html","5f0209a6151bdf67487560e11252e177"],["Cubes.Practice.html","254467b282dbce7f67de8e44f45ce3a5"],["OLDservice-worker.js","db68b7f27242b0a1946e76887e71e529"],["Squares.Practice.html","bf77fa74b93d87335df4f08f2a98dc50"],["Tables.Practice.html","0bdd254d3278df329b8f1308f240ad4d"],["bootstrap.bundle.js","e4c8b8aa3fe6e397b7ee1651cfcfe981"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["bootstrap.min.css","94994c66fec8c3468b269dc0cc242151"],["bootstrap.min.css.map","95fca4cc7b7d54a6bb0a6a1a11c904fa"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","3000fa5cd14588fcba9b2f938b77c896"],["manifest.json","5158705f0ff7c93b94776368f935fda9"]];
+var precacheConfig = [["#Simplification.Practice.html","6873b22d77ecc5c7c5eadcff9215ea68"],["2.digit.Multiplication.html","33491f172f9d17bd4dbee4c1bf891e21"],["3.digit.Multiplication.html","bd26785f6b2d4213ae27081d6106bb46"],["Cubes.Practice.html","7dc2c5985ac933cd56e1c14e783f1314"],["Squares.Practice.html","e913203d068b6c63c7658018e305834d"],["Tables.Practice.html","5b7a864aebc8bd801bfbbac2c3e13269"],["app.js","fff1cdfe057a19d7472a28e855869fc8"],["bootstrap.bundle.js","2ed404bac75a500b6e75cf28c50e9bd4"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["bootstrap.min.css","94994c66fec8c3468b269dc0cc242151"],["bootstrap.min.css.map","95fca4cc7b7d54a6bb0a6a1a11c904fa"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","4dcbb55f470c729328d0464ac8377bda"],["manifest.json","ae19fabe01d851658f72fee607768bb4"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -52,14 +52,6 @@ var addDirectoryIndex = function(originalUrl, index) {
     }
     return url.toString();
   };
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-      caches.match(event.request).then(function(response) {
-          return response || fetch(event.request);
-      })
-  );
-});
 
 var cleanResponse = function(originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
