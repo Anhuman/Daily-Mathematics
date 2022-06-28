@@ -9,7 +9,7 @@ Instructions for Updating (for Android 11 onwards):
 Latest Version:
 v1.1
 Features-
->Fully Offline and decreased loading time via use of cache.
+>Fully Offline and decreased loading time via cache usage.
 
 Known Bugs-
- >Issue regarding Updating the app due to use of cache.
+ >Issue regarding Updating the app due to use of cache. Lokking for workarounds.
