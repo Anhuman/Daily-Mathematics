@@ -1,5 +1,5 @@
-# Daily-Mathematics
-Daily Mathematics 
+# Daily-Mathematics PWA
+IMPORTANT!!\
 Instructions for Updating (for Android 11 onwards):
 1. Press Hold the App for a few seconds (in the app drawer).
 2. Click 'Site Settings'.
