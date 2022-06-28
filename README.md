@@ -7,7 +7,7 @@ Instructions for Updating (for Android 11 onwards):
 4. Exit and Open the App again. [Check the version number on the bottom to confirm]
 
 Version Changelog:
-28/06/2022 -> Version 1.1 
+28/06/2022 -> Version 1.1-
  Features-
  >Fully Offline Capability
  Known Bugs-
