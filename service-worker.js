@@ -1,4 +1,4 @@
-// VERSION: 1
+// VERSION: 2
 
 /**
  * Copyright 2016 Google Inc. All rights reserved.
