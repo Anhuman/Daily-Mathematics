@@ -1,0 +1,6 @@
+.ref::before {
+  color: grey;
+  content: "Version 1.1";
+}
+.symb {
+}
