@@ -1,4 +1,5 @@
-# Daily Mathematics DA-PWA
+# Daily Mathematics DA-PWA (Daily Practice Designs)
+# Author - Anshuman
 IMPORTANT!!\
 Instructions for Updating (for Android 10+):
 1. Press Hold the App for a few seconds (in the app drawer).
