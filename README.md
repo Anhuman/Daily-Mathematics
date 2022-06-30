@@ -2,10 +2,10 @@
 ### _Author: Anshuman_
 IMPORTANT!!\
 Instructions for Updating (for Android 10+):
-1. Press Hold the App for a few seconds (in the app drawer).
+1. Long press the App (in the app drawer).
 2. Click 'Site Settings'.
 3. Click 'Clear & Reset'.
-4. Exit and Open the App again. [Check the version number on the bottom to confirm]
+4. Open the App and pull down to refresh. [Check the version number at the bottom to confirm]
 
 Current Build:
 >Version 1.1
