@@ -1,5 +1,5 @@
-# Daily Mathematics DA-PWA (Daily Practice Designs)
-# Author - Anshuman
+# Daily Mathematics
+### _Author: Anshuman_
 IMPORTANT!!\
 Instructions for Updating (for Android 10+):
 1. Press Hold the App for a few seconds (in the app drawer).
@@ -8,10 +8,10 @@ Instructions for Updating (for Android 10+):
 4. Exit and Open the App again. [Check the version number on the bottom to confirm]
 
 Current Build:
-v1.1
+>Version 1.1
 
-Features-
->Fully Offline and decreased loading time via cache usage.
+What's New:
+>Offline functionality and decreased loading time via cache usage.
 
-Known Bugs-
- >Issue regarding delivery of updates due to use of Browser's cache. (Looking for workarounds, open to constructive feedback & suggestions)
+Known Bugs:
+>Issue regarding delivery of updates due to use of Browser's cache. (Looking for workarounds at the moment)
