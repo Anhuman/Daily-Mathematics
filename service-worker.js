@@ -1,5 +1,3 @@
-const pwa_cache = "1.1";
-
 /**
  * Copyright 2016 Google Inc. All rights reserved.
  *
@@ -39,7 +37,7 @@ const pwa_cache = "1.1";
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["#Simplification.Practice.html","6873b22d77ecc5c7c5eadcff9215ea68"],["2.digit.Multiplication.html","9dc952f5bad0a26191f0d6cde0d74b88"],["3.digit.Multiplication.html","8a35b2151ff9a8936c3dbc53e341b468"],["Cubes.Practice.html","c7bba2982720fd75253aa8818f38e187"],["Squares.Practice.html","04352a59ffe11de37671e73b90e18801"],["Tables.Practice.html","313fc80d92de097125f6540964c398f2"],["bootstrap.bundle.js","35f848b6f97f79a9a9bc936b8949a8f0"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["bootstrap.min.css","94994c66fec8c3468b269dc0cc242151"],["bootstrap.min.css.map","95fca4cc7b7d54a6bb0a6a1a11c904fa"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","b1afef58725381c346adcdfdfe0abf05"],["manifest.json","4df936d7728d90510f76630b13fd8ada"],["myscript.js","63443ddd40be59a3afdf9318fd380986"]];
+var precacheConfig = [["2.digit.Multiplication.html","09515b7ca5fcfc68e92cd735f3c98f87"],["3.digit.Multiplication.html","ebdc30d2e094819d96c92042481179a8"],["Cubes.Practice.html","837fa743459a6d17018de23fbf8f9125"],["Squares.Practice.html","092ac4bfa516bf08a2203c80fef19074"],["Tables.Practice.html","e9517fa5e9d1ade6badd75bb3a8d87db"],["bootstrap.bundle.js","35f848b6f97f79a9a9bc936b8949a8f0"],["bootstrap.bundle.js.map","a44c4996b7a85024643b30bbbc260ff5"],["bootstrap.css","346152dfe092ca2554e4c1c31817461d"],["bootstrap.css.map","e47eba3f324961d8a12f7e48c5803908"],["bootstrap.min.css","94994c66fec8c3468b269dc0cc242151"],["bootstrap.min.css.map","95fca4cc7b7d54a6bb0a6a1a11c904fa"],["icon1.png","949be0afcc0f05cb16f6ee13ddd13ac6"],["icon2.png","42b9f06dc4b895380f0eec8dbbf1eefa"],["index.html","4ac8a1148b6a8381fedf499bb2f8ed29"],["manifest.json","e4fc4f394106acb4befd019f3683895b"],["myscript.js","63443ddd40be59a3afdf9318fd380986"],["netlify.toml","9357e546b4f7705bf61b5e9e859b8502"],["version.css","16a0ff15f61f093c3dc5318ec8817359"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 

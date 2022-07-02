@@ -3,8 +3,6 @@
   "short_name": "Daily Mathematics",
   "start_url": "index.html",
   "scope": "./",
-  "author": "Anshuman",
-  "version": "1.1",
   "icons": [
     {
       "src": "icon1.png",
@@ -19,5 +17,8 @@
   ],
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
-  "display": "standalone"
+  "display": "standalone",
+  "version": "1.1",
+  "version_name": "1.1 beta",
+  "author": "Anshuman"
 }
