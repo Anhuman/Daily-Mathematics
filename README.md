@@ -21,7 +21,7 @@ What's New:
 >Added 'Fractions to Percentage' Practice Sheet.
 
 
->Version 1.1
+>Version 1.1 -
 >Offline functionality and decreased loading time via cache usage.
 
 Known Bugs:
