@@ -1,7 +1,7 @@
 # Daily Mathematics (PWA)
 ### _Author: Anshuman_
 IMPORTANT!!\
-Instructions for Updating\
+Instructions to force Updating\
 (for Android 11 onwards):
 1. Long press the App (in the app drawer).
 2. Click 'Site Settings'.
@@ -12,12 +12,14 @@ Instructions for Updating\
 Just clear the 'app cache' by any method and reopen and refresh the App. 
 
 About:
-> A Progressive Web App (PWA) designed to work in any environment which has a 'Web browser' that supports 'Service Workers.js'. 
+> A Progressive Web App (PWA) designed to work in any environment which has a 'Web browser' that supports 'Service Workers.js' (Node.js). 
 
 Current Build:
->Version 1.1
+>Version 1.2
 
 What's New:
+>Added 'Fractions to Percentage' Practice Sheet
+>Version 1.1
 >Offline functionality and decreased loading time via cache usage.
 
 Known Bugs:
