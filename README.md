@@ -18,7 +18,9 @@ Current Build:
 >Version 1.2
 
 What's New:
-Added 'Fractions to Percentage' Practice Sheet
+>Added 'Fractions to Percentage' Practice Sheet.
+
+
 >Version 1.1
 >Offline functionality and decreased loading time via cache usage.
 
