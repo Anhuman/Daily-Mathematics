@@ -1,4 +1,7 @@
-# Daily Mathematics (PWA)
+# Daily Mathematics (PWA)  
+https://dailymathematics.netlify.app
+
+
 ### _Author: Anshuman_
 IMPORTANT!!\
 Instructions to force Updating\
