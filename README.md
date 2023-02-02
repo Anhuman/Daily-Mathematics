@@ -4,7 +4,7 @@ https://dailymathematics.netlify.app
 
 ### _Author: Anshuman_
 IMPORTANT!!\
-Instructions to force Updating\
+Instructions for force Updating\
 (for Android 11 onwards):
 1. Long press the App (in the app drawer).
 2. Click 'Site Settings'.
